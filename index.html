@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Muñoz | Full Stack Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="sv">SV</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator"></div>
+
+    <!-- Hero Header (Sticky) -->
+    <header id="header">
+        <div class="header-container">
+            <div class="hero-content">
+                <div class="hero-text-content">
+                    <div>
+                        <div class="greeting">Hola, soy</div>
+                        <h1>Jose Muñoz</h1>
+                        <div class="tagline">Full Stack Developer in Training</div>
+                    </div>
+                </div>
+                <p class="bio">
+                    Estudiante apasionado por el desarrollo web, combinando creatividad e impulso 
+                    para crear experiencias digitales únicas. Actualmente dominando JavaScript, HTML y CSS, 
+                    próximamente expandiendo hacia Java, React y Node.js.
+                </p>
+                <div class="location">Höör, Suecia</div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Conectemos</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrapper">
+                <!-- Placeholder: Replace with <img src="your-photo.jpg" alt="Jose Muñoz" class="hero-photo"> -->
+                <div class="hero-photo placeholder">JM</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Spacer for fixed header -->
+    <div class="header-spacer"></div>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about" class="fade-in-section">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div style="max-width: 800px;">
+                <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
+                    Soy un desarrollador en formación con una mentalidad creativa y un enfoque impulsivo que me lleva 
+                    a explorar nuevas tecnologías constantemente. Actualmente enfocado en mejorar mi calidad de vida 
+                    mientras construyo bases sólidas en desarrollo full stack.
+                </p>
+                <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.9;">
+                    Mi viaje en el código comenzó con las tecnologías fundamentales del web, y en enero de 2025 
+                    daré el siguiente paso hacia Java, React y Node.js. Cada línea de código es una oportunidad 
+                    para crear algo significativo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="fade-in-section">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Actualmente</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>Web Fundamentals</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Próximamente (Enero 2025)</h3>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Backend Development</li>
+                        <li>Full Stack Integration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Pensamiento Creativo</li>
+                        <li>Toma de Decisiones Rápida</li>
+                        <li>Aprendizaje Continuo</li>
+                        <li>Resolución de Problemas</li>
+                        <li>Adaptabilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in-section">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="project-status">En Desarrollo</span>
+                    <h3>Boutique de Velas Artesanales</h3>
+                    <p>
+                        Un proyecto híbrido que combina e-commerce con blog personal. Diseñado con 
+                        una estética vintage que refleja la artesanía de las velas hechas a mano. 
+                        Este proyecto explora la intersección entre funcionalidad comercial y 
+                        narrativa personal, creando una experiencia única para los visitantes.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <span class="project-status">En Desarrollo</span>
+                    <h3>Proyecto Personal</h3>
+                    <p>
+                        Segundo proyecto en desarrollo. Detalles próximamente...
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in-section">
+            <h2 class="section-title">Contacto</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin-bottom: 3rem;">
+                ¿Tienes un proyecto en mente o simplemente quieres conectar? Me encantaría saber de ti. 
+                Siempre estoy abierto a nuevas oportunidades y colaboraciones.
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:josecarlosm98@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>josecarlosm98@gmail.com</p>
+                </a>
+                <a href="https://github.com/JoseMunozO" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>@JoseMunozO</p>
+                </a>
+                <a href="https://www.linkedin.com/in/josemunozjs/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <p>josemunozjs</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jose Muñoz. Diseñado y desarrollado con creatividad e impulso.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
