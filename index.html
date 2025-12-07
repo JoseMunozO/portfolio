@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Muñoz | Full Stack Developer</title>
+    <title>Jose Carlos Muñoz | Full Stack Developer</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -16,9 +16,9 @@
 <body>
     <!-- Language Selector -->
     <div class="language-selector">
-        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="sv">SV</button>
-        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
     </div>
 
     <!-- Scroll Indicator -->
@@ -27,28 +27,24 @@
     <!-- Hero Header (Sticky) -->
     <header id="header">
         <div class="header-container">
-            <div class="hero-content">
-                <div class="hero-text-content">
-                    <div>
-                        <div class="greeting">Hola, soy</div>
-                        <h1>Jose Muñoz</h1>
-                        <div class="tagline">Full Stack Developer in Training</div>
-                    </div>
-                </div>
-                <p class="bio">
-                    Estudiante apasionado por el desarrollo web, combinando creatividad e impulso 
-                    para crear experiencias digitales únicas. Actualmente dominando JavaScript, HTML y CSS, 
-                    próximamente expandiendo hacia Java, React y Node.js.
-                </p>
-                <div class="location">Höör, Suecia</div>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Conectemos</a>
-                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
-                </div>
-            </div>
             <div class="hero-photo-wrapper">
-                <!-- Placeholder: Replace with <img src="your-photo.jpg" alt="Jose Muñoz" class="hero-photo"> -->
+                <!-- Placeholder: Replace with your actual photo -->
                 <div class="hero-photo placeholder">JM</div>
+            </div>
+            <div class="hero-content">
+                <div class="greeting">Hi, I'm</div>
+                <h1>Jose Carlos Muñoz</h1>
+                <div class="tagline">Full Stack Developer in Training</div>
+                <p class="bio">
+                    Full Stack student focused on Java and JavaScript. My passion is developing 
+                    digital solutions while learning both frontend and backend in modern environments. 
+                    With experience in team leadership and problem-solving.
+                </p>
+                <div class="location">Höör, Sweden</div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
             </div>
         </div>
     </header>
@@ -57,81 +53,243 @@
     <div class="header-spacer"></div>
 
     <div class="container">
-
         <!-- About Section -->
         <section id="about" class="fade-in-section">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div style="max-width: 800px;">
-                <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
-                    Soy un desarrollador en formación con una mentalidad creativa y un enfoque impulsivo que me lleva 
-                    a explorar nuevas tecnologías constantemente. Actualmente enfocado en mejorar mi calidad de vida 
-                    mientras construyo bases sólidas en desarrollo full stack.
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am currently studying to become a Full Stack Developer with a focus on Java and JavaScript, 
+                    with particular interest in practical application through LIA (Learning in the Workplace). 
+                    I have experience working in a goal-oriented and structured manner, and am accustomed to 
+                    problem-solving and teamwork.
                 </p>
-                <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.9;">
-                    Mi viaje en el código comenzó con las tecnologías fundamentales del web, y en enero de 2025 
-                    daré el siguiente paso hacia Java, React y Node.js. Cada línea de código es una oportunidad 
-                    para crear algo significativo.
+                <p>
+                    My drive is to develop my technical skills and contribute solutions that create value in 
+                    digital projects, while learning to build both frontend and backend solutions in modern 
+                    web development environments.
                 </p>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="fade-in-section">
-            <h2 class="section-title">Habilidades</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Actualmente</h3>
+                    <h3>Web Development</h3>
                     <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
                         <li>JavaScript</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Responsive Design</li>
-                        <li>Web Fundamentals</li>
+                        <li>PHP</li>
+                        <li>C#</li>
+                        <li>SQL</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Próximamente (Enero 2025)</h3>
+                    <h3>Coming Soon (2026-2027)</h3>
                     <ul class="skill-list">
                         <li>Java</li>
                         <li>React</li>
                         <li>Node.js</li>
-                        <li>Backend Development</li>
-                        <li>Full Stack Integration</li>
+                        <li>SQL & NoSQL</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <ul class="skill-list">
+                        <li>SolidWorks</li>
+                        <li>Graphic Design</li>
+                        <li>CAD (intermediate level)</li>
+                        <li>Responsive Design</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Soft Skills</h3>
                     <ul class="skill-list">
-                        <li>Pensamiento Creativo</li>
-                        <li>Toma de Decisiones Rápida</li>
-                        <li>Aprendizaje Continuo</li>
-                        <li>Resolución de Problemas</li>
-                        <li>Adaptabilidad</li>
+                        <li>Team Management</li>
+                        <li>Conflict Resolution</li>
+                        <li>Planning</li>
+                        <li>Customer Service</li>
+                        <li>Results Oriented</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="fade-in-section">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <span class="project-status">En Desarrollo</span>
-                    <h3>Boutique de Velas Artesanales</h3>
-                    <p>
-                        Un proyecto híbrido que combina e-commerce con blog personal. Diseñado con 
-                        una estética vintage que refleja la artesanía de las velas hechas a mano. 
-                        Este proyecto explora la intersección entre funcionalidad comercial y 
-                        narrativa personal, creando una experiencia única para los visitantes.
-                    </p>
+        <!-- Experience Section -->
+        <section id="experience" class="fade-in-section">
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Driftledare/Arbetsledare</h3>
+                            <span class="company">Max Burger</span>
+                            <span class="period">2024 - Actualidad</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Dirección de operaciones diarias, incluyendo apertura, cierre y tareas administrativas</li>
+                            <li>Atención al cliente y coordinación con colaboradores para lograr una organización eficiente</li>
+                            <li>Resolución de problemas en tiempo real para garantizar la satisfacción del cliente</li>
+                            <li>Gestión de quejas de clientes e implementación de soluciones efectivas</li>
+                            <li>Control de inventario y supervisión de operaciones diarias</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <span class="project-status">En Desarrollo</span>
-                    <h3>Proyecto Personal</h3>
-                    <p>
-                        Segundo proyecto en desarrollo. Detalles próximamente...
-                    </p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Medarbetare</h3>
+                            <span class="company">Pugerups & Böketofta Jordbrukskompani AB</span>
+                            <span class="period">2024 - 2025</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Trabajo en diversas actividades agrícolas, incluyendo conducción de tractor</li>
+                            <li>Tareas de jardinería, carpintería y pintura</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Medarbetare</h3>
+                            <span class="company">Max Burger</span>
+                            <span class="period">2021 - 2024</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Realicé diversas tareas dentro de las operaciones del restaurante mientras adquiría conocimientos y experiencia para avanzar a posiciones de liderazgo</li>
+                            <li>Completé la formación para Driftledare en febrero de 2023</li>
+                            <li>Servicio al cliente personalizado con enfoque en alta calidad</li>
+                            <li>Desarrollé habilidades en gestión de quejas y resolución de conflictos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Samarbetare</h3>
+                            <span class="company">StudentConsult - DHL Freight, Värnamo</span>
+                            <span class="period">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="fade-in-section">
+            <h2 class="section-title">Educación</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <h3>Fullstackutvecklare</h3>
+                    <p class="institution">Teknikhögskolan Lund</p>
+                    <p class="period">2025 - 2027</p>
+                    <ul class="education-details">
+                        <li>Full stack development focused on Java, JavaScript, React, Node.js</li>
+                        <li>HTML, CSS, database management (SQL and NoSQL)</li>
+                        <li>Version control with Git at basic and intermediate level</li>
+                    </ul>
+                    <div class="lia-info">
+                        <h4>LIA Internships:</h4>
+                        <p>📅 LIA 1: Dec 7, 2026 - Feb 19, 2027</p>
+                        <p>📅 LIA 2: Mar 1, 2027 - Jun 4, 2027</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">📐</div>
+                    <h3>CAD Konstruktor</h3>
+                    <p class="institution">Jönköping University</p>
+                    <p class="period">2021 - 2023</p>
+                    <ul class="education-details">
+                        <li>Conocimientos en Solidworks, diseño gráfico y CAD</li>
+                        <li>Nivel básico e intermedio</li>
+                    </ul>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">💻</div>
+                    <h3>IT</h3>
+                    <p class="institution">NTI-Gymnasie Kristianstad</p>
+                    <p class="period">2018 - 2020</p>
+                    <ul class="education-details">
+                        <li>Formación en tecnología, desarrollo web y programación</li>
+                        <li>Experiencia en HTML, PHP, C#, Javascript y SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="fade-in-section">
+            <h2 class="section-title">Cursos & Certificaciones</h2>
+            <div class="certifications-grid">
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>SE Me & MAX Operations Employee</p>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>Seguridad Alimentaria</p>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>PCI-DSS y Conciencia de Seguridad</p>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>Trabajo Sistemático del Medio Ambiente (SAM)</p>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>Reclutamiento - Personal de Oficina</p>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">✓</div>
+                    <p>Sostenibilidad - Oficina</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages" class="fade-in-section">
+            <h2 class="section-title">Idiomas</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>Español</h3>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 100%"></div>
+                        </div>
+                        <span>Nativo</span>
+                    </div>
+                </div>
+                <div class="language-card">
+                    <h3>Sueco</h3>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 90%"></div>
+                        </div>
+                        <span>Fluido</span>
+                    </div>
+                </div>
+                <div class="language-card">
+                    <h3>Inglés</h3>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 60%"></div>
+                        </div>
+                        <span>Básico</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,9 +297,9 @@
         <!-- Contact Section -->
         <section id="contact" class="fade-in-section">
             <h2 class="section-title">Contacto</h2>
-            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin-bottom: 3rem;">
-                ¿Tienes un proyecto en mente o simplemente quieres conectar? Me encantaría saber de ti. 
-                Siempre estoy abierto a nuevas oportunidades y colaboraciones.
+            <p class="contact-intro">
+                ¿Tienes un proyecto en mente o buscas un developer para LIA? 
+                Me encantaría saber de ti. Siempre estoy abierto a nuevas oportunidades y colaboraciones.
             </p>
             <div class="contact-grid">
                 <a href="mailto:josecarlosm98@gmail.com" class="contact-card">
@@ -149,23 +307,51 @@
                     <h3>Email</h3>
                     <p>josecarlosm98@gmail.com</p>
                 </a>
+                <a href="tel:+46709436444" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Teléfono</h3>
+                    <p>0709-436 444</p>
+                </a>
                 <a href="https://github.com/JoseMunozO" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-icon">💻</div>
                     <h3>GitHub</h3>
-                    <p>@JoseMunozO</p>
+                    <p>github.com/JoseMunozO</p>
                 </a>
-                <a href="https://www.linkedin.com/in/josemunozjs/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <a href="https://www.linkedin.com/in/josemunozjs" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-icon">🔗</div>
                     <h3>LinkedIn</h3>
-                    <p>josemunozjs</p>
+                    <p>linkedin.com/in/josemunozjs</p>
                 </a>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Ubicación</h3>
+                    <p>Snogeröd Pugerups Gård 324, 243 95, Höör</p>
+                </div>
+            </div>
+
+            <!-- References -->
+            <div class="references">
+                <h3>Referencias Disponibles</h3>
+                <div class="references-grid">
+                    <div class="reference-card">
+                        <h4>Daniel Juhl</h4>
+                        <p class="reference-company">Pugerups Gods</p>
+                        <p class="reference-contact">📧 daniel.juhl@pugerup.se</p>
+                        <p class="reference-contact">📱 0708-433 412</p>
+                    </div>
+                    <div class="reference-card">
+                        <h4>George Bergengren</h4>
+                        <p class="reference-contact">📧 gb@bergengren.com</p>
+                        <p class="reference-contact">📱 0705-606 606</p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Jose Muñoz. Diseñado y desarrollado con creatividad e impulso.</p>
+        <p>&copy; 2024 Jose Carlos Muñoz. Designed and developed with passion.</p>
     </footer>
 
     <!-- External JavaScript -->
