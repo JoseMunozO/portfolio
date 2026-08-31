@@ -4,7 +4,7 @@ interface FooterProps {
 
 export function Footer({ name }: FooterProps) {
   return (
-    <footer className="site-footer">
+    <footer className="border-t border-neutral-200 px-5 py-6 text-center text-sm dark:border-neutral-800">
       <p>
         © {new Date().getFullYear()} {name}
       </p>

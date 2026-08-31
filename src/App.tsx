@@ -7,7 +7,6 @@ import { About } from './components/About'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-import './App.css'
 
 function PortfolioPage() {
   const { locale } = useLocale()
@@ -15,16 +14,16 @@ function PortfolioPage() {
   const projects = getProjects(locale)
 
   return (
-    <>
+    <div className="mx-auto flex min-h-svh w-full max-w-[1126px] flex-col border-x border-neutral-200 bg-white text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400">
       <Header name={settings.name} />
-      <main>
+      <main className="flex-1">
         <Hero name={settings.name} role={settings.role} tagline={settings.tagline} />
         <Projects projects={projects} />
         <About bio={settings.bio} skills={settings.skills} />
         <Contact links={settings.contactLinks} />
       </main>
       <Footer name={settings.name} />
-    </>
+    </div>
   )
 }
 
