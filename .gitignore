@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Documentación interna de planificación (roadmap, notas) — no va al repo
+docs/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
