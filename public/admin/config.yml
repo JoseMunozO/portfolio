@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: JoseMunozO/portfolio
-  branch: main
+  branch: staging
   auth_type: pkce
   # TODO (Fase 7 - deploy): reemplazar por el Client ID de la GitHub OAuth App
   # creada una vez que el sitio tenga dominio de Netlify (para la callback URL).
@@ -17,6 +17,11 @@ local_backend: true
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
+i18n:
+  structure: multiple_files
+  locales: [es, en, sv]
+  default_locale: es
+
 collections:
   - name: "projects"
     label: "Proyectos"
@@ -27,12 +32,14 @@ collections:
     slug: "{{slug}}"
     identifier_field: "title"
     summary: "{{title}} — {{status}}"
+    i18n: true
     fields:
-      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Título", name: "title", widget: "string", i18n: true }
       - label: "Estado"
         name: "status"
         widget: "select"
         default: "en-progreso"
+        i18n: duplicate
         options:
           - { label: "Listo", value: "listo" }
           - { label: "En progreso", value: "en-progreso" }
@@ -41,31 +48,60 @@ collections:
         name: "description"
         widget: "text"
         hint: "Se muestra en la tarjeta del proyecto"
+        i18n: true
       - label: "Stack / tecnologías"
         name: "stack"
         widget: "list"
         default: []
+        i18n: duplicate
       - label: "Imagen de portada"
         name: "image"
         widget: "image"
         required: false
+        i18n: duplicate
       - label: "Repositorio (GitHub)"
         name: "repoUrl"
         widget: "string"
         required: false
+        i18n: duplicate
       - label: "Demo en vivo"
         name: "demoUrl"
         widget: "string"
         required: false
+        i18n: duplicate
       - label: "Destacado"
         name: "featured"
         widget: "boolean"
         default: false
+        i18n: duplicate
       - label: "Fecha"
         name: "date"
         widget: "datetime"
         required: false
+        i18n: duplicate
       - label: "Contenido extendido"
         name: "body"
         widget: "markdown"
         required: false
+        i18n: true
+
+  - name: "settings"
+    label: "Configuración del sitio"
+    files:
+      - name: "general"
+        label: "General"
+        file: "content/settings/general.yml"
+        i18n: true
+        fields:
+          - { label: "Nombre", name: "name", widget: "string", i18n: duplicate }
+          - { label: "Rol / título", name: "role", widget: "string", i18n: true }
+          - { label: "Frase de presentación", name: "tagline", widget: "string", i18n: true }
+          - { label: "Biografía", name: "bio", widget: "text", i18n: true }
+          - { label: "Skills", name: "skills", widget: "list", default: [], i18n: duplicate }
+          - label: "Enlaces de contacto"
+            name: "contactLinks"
+            widget: "list"
+            i18n: true
+            fields:
+              - { label: "Etiqueta", name: "label", widget: "string", i18n: true }
+              - { label: "URL", name: "url", widget: "string", i18n: duplicate }
