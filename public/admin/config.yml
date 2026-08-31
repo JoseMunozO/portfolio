@@ -1,0 +1,71 @@
+backend:
+  name: github
+  repo: JoseMunozO/portfolio
+  branch: main
+  auth_type: pkce
+  # TODO (Fase 7 - deploy): reemplazar por el Client ID de la GitHub OAuth App
+  # creada una vez que el sitio tenga dominio de Netlify (para la callback URL).
+  app_id: REPLACE_WITH_GITHUB_OAUTH_APP_CLIENT_ID
+
+# Mientras no haya app_id real, se puede editar en local con:
+#   npm run cms   (en una terminal)
+#   npm run dev   (en otra terminal)
+# y visitando http://localhost:5173/admin — Decap detecta localhost y usa
+# el backend local automáticamente, sin necesitar login de GitHub.
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Proyectos"
+    label_singular: "Proyecto"
+    folder: "content/projects"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} — {{status}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - label: "Estado"
+        name: "status"
+        widget: "select"
+        default: "en-progreso"
+        options:
+          - { label: "Listo", value: "listo" }
+          - { label: "En progreso", value: "en-progreso" }
+          - { label: "Futuro", value: "futuro" }
+      - label: "Descripción corta"
+        name: "description"
+        widget: "text"
+        hint: "Se muestra en la tarjeta del proyecto"
+      - label: "Stack / tecnologías"
+        name: "stack"
+        widget: "list"
+        default: []
+      - label: "Imagen de portada"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Repositorio (GitHub)"
+        name: "repoUrl"
+        widget: "string"
+        required: false
+      - label: "Demo en vivo"
+        name: "demoUrl"
+        widget: "string"
+        required: false
+      - label: "Destacado"
+        name: "featured"
+        widget: "boolean"
+        default: false
+      - label: "Fecha"
+        name: "date"
+        widget: "datetime"
+        required: false
+      - label: "Contenido extendido"
+        name: "body"
+        widget: "markdown"
+        required: false

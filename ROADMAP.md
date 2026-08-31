@@ -12,12 +12,17 @@ código. Cada proyecto tiene un **estado**: `listo`, `en-progreso`, `futuro`.
 - [ ] Conectar el repo a Netlify (nuevo site desde Git)
 
 ## Fase 1 — Arquitectura de contenido (Decap CMS)
-- [ ] Definir esquema de "proyecto": título, descripción, stack, estado
+- [x] Definir esquema de "proyecto": título, descripción, stack, estado
       (listo / en-progreso / futuro), imagen, link de repo, link de demo
-- [ ] Carpeta `content/projects/*.md` como fuente de verdad (un archivo por
-      proyecto, front-matter + descripción)
-- [ ] Instalar Decap CMS (`public/admin/index.html` + `config.yml`)
-- [ ] Autenticación: Netlify Identity + Git Gateway (login para editar)
+- [x] Carpeta `content/projects/*.md` como fuente de verdad (un archivo por
+      proyecto, front-matter + descripción) — con un proyecto de ejemplo
+- [x] Instalar Decap CMS (`public/admin/index.html` + `config.yml`)
+- [x] Backend local para desarrollo: `npm run cms` (decap-server) + `npm run dev`,
+      visitar `/admin` — edita sin login mientras no hay deploy
+- [ ] Autenticación en producción: GitHub OAuth App con PKCE (pendiente de
+      dominio de Netlify para la callback URL — ver Fase 7)
+- [ ] Verificar visualmente en navegador que `/admin` carga bien (pendiente,
+      sin acceso a navegador en este entorno)
 - [ ] Probar el flujo completo: crear/editar/borrar proyecto desde `/admin`
 
 ## Fase 2 — Desarrollo UI
@@ -48,7 +53,8 @@ código. Cada proyecto tiene un **estado**: `listo`, `en-progreso`, `futuro`.
 
 ## Fase 7 — Deploy a Netlify
 - [ ] `netlify.toml` (build command, publish dir, redirects SPA)
-- [ ] Activar Netlify Identity + Git Gateway en el site
+- [ ] Crear GitHub OAuth App (callback URL = dominio de Netlify) y actualizar
+      `app_id` en `public/admin/config.yml`
 - [ ] Dominio (subdominio Netlify o dominio propio)
 
 ## Fase 8 — CI/CD y mantenimiento
