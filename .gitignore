@@ -15,6 +15,10 @@ dist-ssr
 # Documentación interna de planificación (roadmap, notas) — no va al repo
 docs/
 
+# Config local de Claude Code — vive solo en la rama chore/claude-config,
+# nunca en main/staging/feature (se añade ahí con `git add -f`)
+CLAUDE.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
