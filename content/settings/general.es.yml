@@ -1,0 +1,15 @@
+name: "Tu nombre"
+role: "Desarrollador de software"
+tagline: "Construyo cosas para la web."
+bio: "Escribe aquí una breve biografía sobre ti: tu experiencia, lo que te apasiona y en qué estás trabajando ahora. Se edita desde /admin."
+skills:
+  - React
+  - TypeScript
+  - Node.js
+contactLinks:
+  - label: Correo
+    url: "mailto:tu-email@ejemplo.com"
+  - label: GitHub
+    url: "https://github.com/tu-usuario"
+  - label: LinkedIn
+    url: "https://linkedin.com/in/tu-usuario"

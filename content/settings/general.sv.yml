@@ -1,0 +1,15 @@
+name: "Tu nombre"
+role: "Mjukvaruutvecklare"
+tagline: "Jag bygger saker för webben."
+bio: "Skriv en kort biografi här: din erfarenhet, vad du brinner för och vad du jobbar med just nu. Redigerbar från /admin."
+skills:
+  - React
+  - TypeScript
+  - Node.js
+contactLinks:
+  - label: E-post
+    url: "mailto:tu-email@ejemplo.com"
+  - label: GitHub
+    url: "https://github.com/tu-usuario"
+  - label: LinkedIn
+    url: "https://linkedin.com/in/tu-usuario"

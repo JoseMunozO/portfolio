@@ -12,8 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Fechas de proyectos generadas desde git en build-time (ver
+# scripts/generate-content-dates.mjs) — no se versiona, se regenera siempre
+content/generated/
+
 # Documentación interna de planificación (roadmap, notas) — no va al repo
 docs/
+
+# Config local de Claude Code — vive solo en la rama chore/claude-config,
+# nunca en main/staging/feature (se añade ahí con `git add -f`)
+CLAUDE.md
 
 # Editor directories and files
 .vscode/*
