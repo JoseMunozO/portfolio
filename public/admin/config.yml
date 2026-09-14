@@ -74,11 +74,10 @@ collections:
         widget: "boolean"
         default: false
         i18n: duplicate
-      - label: "Fecha"
-        name: "date"
-        widget: "datetime"
-        required: false
-        i18n: duplicate
+      # La fecha ya no se edita a mano: se calcula sola en build-time a partir
+      # del último commit de git que tocó cada archivo (ver
+      # scripts/generate-content-dates.mjs). Se actualiza automáticamente
+      # cada vez que guardas un cambio desde este panel.
       - label: "Contenido extendido"
         name: "body"
         widget: "markdown"

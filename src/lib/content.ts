@@ -17,6 +17,24 @@ const projectFiles = import.meta.glob('/content/projects/*.*.md', {
   import: 'default',
 }) as Record<string, string>
 
+// Generado por scripts/generate-content-dates.mjs (predev/prebuild) a partir
+// del último commit de git de cada archivo — no se edita a mano.
+const generatedDatesFile = import.meta.glob('/content/generated/dates.json', {
+  eager: true,
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>
+
+const contentDates: Record<string, string> = (() => {
+  const raw = Object.values(generatedDatesFile)[0]
+  if (!raw) return {}
+  try {
+    return JSON.parse(raw) as Record<string, string>
+  } catch {
+    return {}
+  }
+})()
+
 function slugOf(path: string): string {
   return path.split('/').pop()!.replace(/\.(en|sv|es)\.md$/, '')
 }
@@ -39,7 +57,7 @@ export function getProjects(locale: Locale): Project[] {
       repoUrl: data.repoUrl,
       demoUrl: data.demoUrl,
       featured: data.featured ?? false,
-      date: data.date,
+      date: contentDates[path] ?? data.date,
       body: content,
     }
     if (!bySlug.has(slug)) bySlug.set(slug, {})
