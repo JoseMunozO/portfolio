@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Fechas de proyectos generadas desde git en build-time (ver
+# scripts/generate-content-dates.mjs) — no se versiona, se regenera siempre
+content/generated/
+
 # Documentación interna de planificación (roadmap, notas) — no va al repo
 docs/
 
