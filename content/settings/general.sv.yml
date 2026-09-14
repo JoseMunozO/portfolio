@@ -1,15 +1,24 @@
-name: "Tu nombre"
-role: "Mjukvaruutvecklare"
-tagline: "Jag bygger saker för webben."
-bio: "Skriv en kort biografi här: din erfarenhet, vad du brinner för och vad du jobbar med just nu. Redigerbar från /admin."
+name: "Jose Carlos Muñoz"
+role: "Fullstackutvecklare under utbildning"
+tagline: "Jag går sönder saker lokalt så produktionen slipper."
+bio: "Allt började med Sune, min katt, och min flickvän, som började göra handgjorda ljus — tillsammans kom vi på namnet CandlePaw. Jag byggde en enkel webbsida för idén, och det var då jag upptäckte att jag gillade att programmera mer än att göra ljus. Sedan dess studerar jag Fullstackutveckling på Teknikhögskolan (Lund), och jag fortsätter bygga projekt — inklusive, så klart, CandlePaw självt, som jag nu bygger om ordentligt."
 skills:
-  - React
+  - Java
+  - Spring Boot
+  - JavaScript
   - TypeScript
+  - React
   - Node.js
+  - Express.js
+  - MySQL
+  - Git
+  - Docker
 contactLinks:
   - label: E-post
-    url: "mailto:tu-email@ejemplo.com"
+    url: "mailto:josecarlosm98@gmail.com"
   - label: GitHub
-    url: "https://github.com/tu-usuario"
+    url: "https://github.com/JoseMunozO"
   - label: LinkedIn
-    url: "https://linkedin.com/in/tu-usuario"
+    url: "https://linkedin.com/in/ozeca98"
+  - label: CV
+    url: "https://jose-carlos-munoz-cv.netlify.app"

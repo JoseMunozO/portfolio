@@ -1,15 +1,24 @@
-name: "Tu nombre"
-role: "Software developer"
-tagline: "I build things for the web."
-bio: "Write a short bio here: your experience, what you're passionate about, and what you're currently working on. Editable from /admin."
+name: "Jose Carlos Muñoz"
+role: "Fullstack Developer Student"
+tagline: "I break things locally so production doesn't have to."
+bio: "It started with Sune, my cat, and my girlfriend, who began making handmade candles — together we came up with the name CandlePaw. I built a simple website for the idea, and that's where I discovered I liked coding more than candle-making. Since then I've been studying Fullstack development at Teknikhögskolan (Lund), and I keep building projects — including, of course, CandlePaw itself, which I'm now rebuilding properly."
 skills:
-  - React
+  - Java
+  - Spring Boot
+  - JavaScript
   - TypeScript
+  - React
   - Node.js
+  - Express.js
+  - MySQL
+  - Git
+  - Docker
 contactLinks:
   - label: Email
-    url: "mailto:tu-email@ejemplo.com"
+    url: "mailto:josecarlosm98@gmail.com"
   - label: GitHub
-    url: "https://github.com/tu-usuario"
+    url: "https://github.com/JoseMunozO"
   - label: LinkedIn
-    url: "https://linkedin.com/in/tu-usuario"
+    url: "https://linkedin.com/in/ozeca98"
+  - label: CV
+    url: "https://jose-carlos-munoz-cv.netlify.app"

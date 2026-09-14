@@ -1,15 +1,24 @@
-name: "Tu nombre"
-role: "Desarrollador de software"
-tagline: "Construyo cosas para la web."
-bio: "Escribe aquí una breve biografía sobre ti: tu experiencia, lo que te apasiona y en qué estás trabajando ahora. Se edita desde /admin."
+name: "Jose Carlos Muñoz"
+role: "Estudiante de desarrollo Fullstack"
+tagline: "Rompo cosas en local para que no se rompan en producción."
+bio: "Todo empezó con Sune, mi gato, y con mi novia, que se puso a hacer velas artesanales — entre los dos salió el nombre CandlePaw. Armé una web sencilla para esa idea y ahí descubrí que programar me gustaba más que las velas. Desde entonces estudio desarrollo Fullstack en Teknikhögskolan (Lund), y sigo construyendo proyectos — incluido, claro, el propio CandlePaw, que ahora estoy reconstruyendo mejor."
 skills:
-  - React
+  - Java
+  - Spring Boot
+  - JavaScript
   - TypeScript
+  - React
   - Node.js
+  - Express.js
+  - MySQL
+  - Git
+  - Docker
 contactLinks:
   - label: Correo
-    url: "mailto:tu-email@ejemplo.com"
+    url: "mailto:josecarlosm98@gmail.com"
   - label: GitHub
-    url: "https://github.com/tu-usuario"
+    url: "https://github.com/JoseMunozO"
   - label: LinkedIn
-    url: "https://linkedin.com/in/tu-usuario"
+    url: "https://linkedin.com/in/ozeca98"
+  - label: CV
+    url: "https://jose-carlos-munoz-cv.netlify.app"
