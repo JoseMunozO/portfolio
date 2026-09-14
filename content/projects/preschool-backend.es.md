@@ -11,7 +11,7 @@ stack:
   - JWT
   - Docker
 repoUrl: "https://github.com/JoseMunozO/backend-preschool"
-demoUrl: ""
+demoUrl: "https://backend-preschool-production.up.railway.app/swagger-ui/index.html"
 featured: false
 ---
 

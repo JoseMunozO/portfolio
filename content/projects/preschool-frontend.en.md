@@ -12,8 +12,10 @@ stack:
   - Zod
   - Tailwind CSS
 repoUrl: "https://github.com/JoseMunozO/frontend-preschool"
-demoUrl: ""
+demoUrl: "https://preschool-admin-demo.netlify.app"
 featured: false
 ---
 
 The frontend half of a complete app: consumes the API from the **Preschool Admin — Backend** project (same product, separate repos). Includes student and family management with a recoverable trash, billing and PDF receipts, inventory, schedules and attendance, role-based reports, and six user roles with navigation and language (es/en/sv) adapted per role.
+
+**Demo:** log in with `admin@school.com` / `123456` (test data only, nothing real).
