@@ -9,7 +9,7 @@ stack:
   - i18next
   - Netlify
 repoUrl: "https://github.com/JoseMunozO/cv-jose"
-demoUrl: ""
+demoUrl: "https://jose-carlos-munoz-cv.netlify.app"
 featured: false
 ---
 
