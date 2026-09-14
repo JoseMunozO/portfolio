@@ -8,8 +8,10 @@ stack:
   - MySQL
   - JavaScript
 repoUrl: "https://github.com/nilsfjp/webshop-najs"
-demoUrl: ""
+demoUrl: "https://webshop-najs-demo.netlify.app"
 featured: false
 ---
 
 Backend de tienda online con Express 5 y MySQL, más una frontend estática con vista de tienda para clientes y vista de administración para pruebas/debugging. Proyecto grupal del curso *Databaser (40 YP)* en Teknikhögskolan, desarrollado junto a tres compañeros.
+
+**Demo:** login con `alice.nyberg@example.com` (sin contraseña, solo email — datos de prueba).
