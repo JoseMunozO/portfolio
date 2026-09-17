@@ -90,7 +90,8 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
 - [x] Crear GitHub OAuth App (callback URL = `https://api.netlify.com/auth/done`)
       e instalar el provider en Netlify (Project configuration → Security →
       OAuth) con su Client ID y secret — no hace falta `app_id` en config.yml
-- [ ] Dominio (subdominio Netlify o dominio propio)
+- [ ] Dominio propio — no es prioridad por ahora, el subdominio de Netlify
+      (`joseporfolio.netlify.app`) alcanza. Retomar si interesa más adelante
 
 ## Fase 8 — CI/CD y mantenimiento
 - [x] Auto-deploy en cada push a `main` (Netlify por defecto) — confirmado
@@ -103,7 +104,11 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
 - [x] SEO básico — Open Graph/Twitter Card (con `og-image.png` 1200x630
       generado con el branding del sitio) y `sitemap.xml`; meta
       description/title y robots.txt ya estaban (ver Fase 6)
-- [ ] Analytics (Netlify Analytics o Plausible)
+- [ ] Analytics — no es prioridad por ahora: Netlify Analytics es de pago
+      (~$9/mes) y las alternativas gratis (GoatCounter, Cloudflare Web
+      Analytics, Umami Cloud) requieren crear cuenta en un tercero para un
+      beneficio bajo en un portfolio orientado a reclutadores. Retomar si
+      da curiosidad más adelante
 - [x] Revisión de dependencias — `npm audit`: de 5 vulnerabilidades
       (2 low, 3 moderate, todas transitivas de `decap-server`, solo usado
       en `npm run cms` local) bajamos a 2 low con `npm audit fix`; las 2
