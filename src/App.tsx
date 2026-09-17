@@ -17,7 +17,7 @@ function PortfolioPage() {
     <div className="mx-auto flex min-h-svh w-full max-w-[1126px] flex-col border-x border-neutral-200 bg-white text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400">
       <Header name={settings.name} />
       <main className="flex-1">
-        <Hero name={settings.name} role={settings.role} tagline={settings.tagline} />
+        <Hero name={settings.name} role={settings.role} tagline={settings.tagline} photo={settings.photo} />
         <Projects projects={projects} />
         <About bio={settings.bio} skills={settings.skills} />
         <Contact links={settings.contactLinks} />

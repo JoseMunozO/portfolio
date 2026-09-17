@@ -97,6 +97,7 @@ collections:
         i18n: true
         fields:
           - { label: "Nombre", name: "name", widget: "string", i18n: duplicate }
+          - { label: "Foto de perfil", name: "photo", widget: "image", required: false, i18n: duplicate }
           - { label: "Rol / título", name: "role", widget: "string", i18n: true }
           - { label: "Frase de presentación", name: "tagline", widget: "string", i18n: true }
           - { label: "Biografía", name: "bio", widget: "text", i18n: true }

@@ -26,6 +26,7 @@ export interface SiteSettings {
   role: string
   tagline: string
   bio: string
+  photo?: string
   skills: string[]
   contactLinks: ContactLink[]
 }

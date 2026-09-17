@@ -4,13 +4,21 @@ interface HeroProps {
   name: string
   role: string
   tagline: string
+  photo?: string
 }
 
-export function Hero({ name, role, tagline }: HeroProps) {
+export function Hero({ name, role, tagline, photo }: HeroProps) {
   const { t } = useLocale()
 
   return (
     <section id="inicio" className="px-5 py-12 text-center md:px-8 md:py-24">
+      {photo && (
+        <img
+          src={photo}
+          alt={name}
+          className="mx-auto mb-6 h-28 w-28 rounded-full object-cover ring-2 ring-neutral-200 md:h-36 md:w-36 dark:ring-neutral-800"
+        />
+      )}
       <p className="mb-2 font-semibold text-violet-600 dark:text-violet-400">{role}</p>
       <h1 className="text-4xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 md:text-6xl">
         {name}
