@@ -100,6 +100,11 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
       corre en PRs y pushes a `main`/`staging`: `npm ci`, lint, build)
 
 ## Fase 9 — Post-lanzamiento
-- [ ] SEO básico (meta tags, Open Graph, sitemap)
+- [ ] SEO básico (Open Graph, sitemap — meta description/title y
+      robots.txt ya están, ver Fase 6)
 - [ ] Analytics (Netlify Analytics o Plausible)
-- [ ] Revisión periódica de dependencias
+- [x] Revisión de dependencias — `npm audit`: de 5 vulnerabilidades
+      (2 low, 3 moderate, todas transitivas de `decap-server`, solo usado
+      en `npm run cms` local) bajamos a 2 low con `npm audit fix`; las 2
+      restantes (`@hapi/joi`, prototype pollution) no tienen fix upstream
+      todavía — bajo riesgo real (no está expuesto a input no confiable)
