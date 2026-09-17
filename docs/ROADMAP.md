@@ -62,9 +62,14 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
       `slug.<locale>.md`, `general.<locale>.yml`)
 
 ## Fase 5 — Testing
-- [ ] Pruebas manuales en distintos viewports
-- [ ] Validar ciclo completo de Decap CMS → commit → redeploy
-- [ ] Auditoría Lighthouse (performance, accesibilidad, SEO)
+- [x] Pruebas en distintos viewports — desktop en Fase 6 (Chrome + Safari);
+      mobile vía emulación de Lighthouse (412×823): layout de una columna,
+      tags con wrap, sin overflow horizontal. Falta probar en un dispositivo
+      físico real
+- [x] Validar ciclo completo de Decap CMS → commit → redeploy — hecho en
+      Fase 1 (crear/borrar proyecto en producción, commits b0ef6f3/5dfede9)
+- [x] Auditoría Lighthouse (performance, accesibilidad, SEO) — 100/100/100/100
+      tras corregir contraste de badges, meta description/title y robots.txt
 
 ## Fase 6 — Debugging y QA
 - [x] Revisar errores de build/consola — build y `npm run lint` limpios;
