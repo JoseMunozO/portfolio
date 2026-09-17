@@ -2,12 +2,13 @@ backend:
   name: github
   repo: JoseMunozO/portfolio
   branch: main
-  auth_type: pkce
-  # Client ID de la GitHub OAuth App "Portfolio CMS (Decap)"
-  # (callback: https://joseporfolio.netlify.app/). PKCE no usa client secret.
-  app_id: Ov23lix4vB6r50Tr09jf
+  # Auth vía el OAuth provider de GitHub instalado en Netlify (Project
+  # configuration > Security > OAuth). El backend "github" de Decap no
+  # soporta auth_type: pkce (GitHub OAuth requiere intercambiar el code
+  # por un token con client_secret, algo que solo puede hacerse server-side),
+  # así que dejamos que Netlify haga de proxy — no hace falta app_id aquí.
 
-# Mientras no haya app_id real, se puede editar en local con:
+# En local se puede editar sin login con:
 #   npm run cms   (en una terminal)
 #   npm run dev   (en otra terminal)
 # y visitando http://localhost:5173/admin — Decap detecta localhost y usa
