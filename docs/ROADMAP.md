@@ -93,8 +93,9 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
 - [ ] Dominio (subdominio Netlify o dominio propio)
 
 ## Fase 8 — CI/CD y mantenimiento
-- [ ] Auto-deploy en cada push a `main` (Netlify por defecto)
-- [ ] Documentar en README cómo añadir un proyecto nuevo vía `/admin`
+- [x] Auto-deploy en cada push a `main` (Netlify por defecto) — confirmado
+      repetidas veces durante la sesión (PRs #9-#15, commits del CMS)
+- [x] Documentar en README cómo añadir un proyecto nuevo vía `/admin`
 - [ ] (Opcional) GitHub Action de lint/build en PRs
 
 ## Fase 9 — Post-lanzamiento
