@@ -96,7 +96,8 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
 - [x] Auto-deploy en cada push a `main` (Netlify por defecto) — confirmado
       repetidas veces durante la sesión (PRs #9-#15, commits del CMS)
 - [x] Documentar en README cómo añadir un proyecto nuevo vía `/admin`
-- [ ] (Opcional) GitHub Action de lint/build en PRs
+- [x] GitHub Action de lint/build en PRs (`.github/workflows/ci.yml`,
+      corre en PRs y pushes a `main`/`staging`: `npm ci`, lint, build)
 
 ## Fase 9 — Post-lanzamiento
 - [ ] SEO básico (meta tags, Open Graph, sitemap)
