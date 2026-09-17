@@ -1,11 +1,11 @@
 backend:
   name: github
   repo: JoseMunozO/portfolio
-  branch: staging
+  branch: main
   auth_type: pkce
-  # TODO (Fase 7 - deploy): reemplazar por el Client ID de la GitHub OAuth App
-  # creada una vez que el sitio tenga dominio de Netlify (para la callback URL).
-  app_id: REPLACE_WITH_GITHUB_OAUTH_APP_CLIENT_ID
+  # Client ID de la GitHub OAuth App "Portfolio CMS (Decap)"
+  # (callback: https://joseporfolio.netlify.app/). PKCE no usa client secret.
+  app_id: Ov23lix4vB6r50Tr09jf
 
 # Mientras no haya app_id real, se puede editar en local con:
 #   npm run cms   (en una terminal)
