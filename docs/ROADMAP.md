@@ -74,8 +74,10 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
       tras revisar que no tuvieran secretos. Resto de links (7 repos, 4
       demos, LinkedIn/GitHub/CV) y robots.txt en 200. Sin imágenes
       configuradas todavía (campo opcional, ningún proyecto lo usa aún)
-- [ ] Probar en distintos navegadores — solo se pudo probar en Chrome
-      (automatización); falta verificación manual en Safari/Firefox
+- [x] Probar en distintos navegadores — verificado en Chrome (automatizado)
+      y Safari macOS (manual, por el usuario): layout, modo claro/oscuro,
+      selector de idioma y links, todo bien. Sin probar aún en Firefox ni
+      en un navegador móvil real
 
 ## Fase 7 — Deploy a Netlify
 - [x] `netlify.toml` (build command, publish dir; no hace falta redirect SPA,
