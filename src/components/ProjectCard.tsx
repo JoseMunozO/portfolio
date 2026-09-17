@@ -3,8 +3,8 @@ import { statusLabels } from '../i18n/translations'
 import type { Project, ProjectStatus } from '../types/content'
 
 const STATUS_STYLES: Record<ProjectStatus, string> = {
-  listo: 'bg-green-600/10 text-green-600 dark:bg-green-400/10 dark:text-green-400',
-  'en-progreso': 'bg-amber-600/10 text-amber-600 dark:bg-amber-400/10 dark:text-amber-400',
+  listo: 'bg-green-600/10 text-green-800 dark:bg-green-400/10 dark:text-green-400',
+  'en-progreso': 'bg-amber-600/10 text-amber-800 dark:bg-amber-400/10 dark:text-amber-400',
   futuro: 'bg-neutral-100 text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400',
 }
 
