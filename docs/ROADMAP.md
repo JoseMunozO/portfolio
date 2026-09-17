@@ -67,9 +67,15 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
 - [ ] Auditoría Lighthouse (performance, accesibilidad, SEO)
 
 ## Fase 6 — Debugging y QA
-- [ ] Revisar errores de build/consola
-- [ ] Validar links rotos e imágenes faltantes
-- [ ] Probar en distintos navegadores
+- [x] Revisar errores de build/consola — build y `npm run lint` limpios;
+      sin errores/warnings en consola (ES/EN/SV) en producción
+- [x] Validar links rotos e imágenes faltantes — 2 repos privados
+      (candlepaw-api, cv-jose) daban 404 a visitantes; se hicieron públicos
+      tras revisar que no tuvieran secretos. Resto de links (7 repos, 4
+      demos, LinkedIn/GitHub/CV) y robots.txt en 200. Sin imágenes
+      configuradas todavía (campo opcional, ningún proyecto lo usa aún)
+- [ ] Probar en distintos navegadores — solo se pudo probar en Chrome
+      (automatización); falta verificación manual en Safari/Firefox
 
 ## Fase 7 — Deploy a Netlify
 - [x] `netlify.toml` (build command, publish dir; no hace falta redirect SPA,
