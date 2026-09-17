@@ -100,8 +100,9 @@ El sitio es trilingüe: **es** (default) / **en** / **sv**.
       corre en PRs y pushes a `main`/`staging`: `npm ci`, lint, build)
 
 ## Fase 9 — Post-lanzamiento
-- [ ] SEO básico (Open Graph, sitemap — meta description/title y
-      robots.txt ya están, ver Fase 6)
+- [x] SEO básico — Open Graph/Twitter Card (con `og-image.png` 1200x630
+      generado con el branding del sitio) y `sitemap.xml`; meta
+      description/title y robots.txt ya estaban (ver Fase 6)
 - [ ] Analytics (Netlify Analytics o Plausible)
 - [x] Revisión de dependencias — `npm audit`: de 5 vulnerabilidades
       (2 low, 3 moderate, todas transitivas de `decap-server`, solo usado
